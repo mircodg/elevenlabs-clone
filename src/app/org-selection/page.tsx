@@ -4,7 +4,6 @@ export default function OrgSelectionPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background">
       <OrganizationList
-        hidePersonal
         afterCreateOrganizationUrl={"/"}
         afterSelectOrganizationUrl={"/"}
         appearance={{
@@ -13,6 +12,7 @@ export default function OrgSelectionPage() {
             card: "shadow-lg",
           },
         }}
+        hidePersonal
       />
     </div>
   );
